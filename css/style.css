@@ -1,0 +1,131 @@
+*{
+  paddding:0;
+  margin:0;
+  font-family:"roboto", sans-serif;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(-5.47deg, #0A0C10 26.38%, rgba(18, 12, 16, 0.8) 58.87%, #0A0C10 73.17%);
+  }
+
+.hide{
+  display:none;
+}
+
+.container{
+  background-color: #5c54ed ;
+  padding: 3rem;
+  color: #fdfdfd;
+  border-radius: 1rem;
+  max-width: 400px;
+}
+
+/* form */
+
+.form h3 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.form-input-container {
+  display: flex;
+}
+
+.form input {
+  box-shadow: 0 0 0 0;
+    outline: 0;
+  padding: 0.8rem;
+  border: none;
+  flex: 1;
+  border-radius: 4px;
+}
+input::-webkit-input-placeholder {
+  font-size:11px;
+}
+
+.form button {
+  padding: 0.8rem;
+  min-width: 50px;
+  margin-left: 8px;
+  background-color: #8dd0f5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+#weather-data{
+  border-top: 1px solid #fff;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+#weather-data h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+#weather-data h2 i {
+  font-size: 1rem;
+}
+
+#weather-data span{
+  margin: 0.6rem;
+}
+
+#country{
+  height:15px;
+}
+
+#description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+#description {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#details-container #humidity {
+  border-right: 1px solid #fff;
+  margin: 0.6rem;
+  padding: 0.6rem;
+}
